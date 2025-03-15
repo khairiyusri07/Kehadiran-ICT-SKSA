@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  .student-list {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  .student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .attendance-options {
+    display: flex;
+    gap: 10px;
+  }
+  .attendance-options input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+  }
+  .attendance-options label {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .attendance-options label:hover {
+    background-color: #e0e0e0;
+  }
+  .attendance-options input[type="radio"]:checked + label {
+    background-color: #4CAF50; /* Green for "Present" */
+    color: white;
+  }
+  .attendance-options input[type="radio"][value="Absent"]:checked + label {
+    background-color: #f44336; /* Red for "Absent" */
+    color: white;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing */
+
+}
+
+
+  .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #45a049;
+  }

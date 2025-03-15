@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img class="logo-sekolah" src="img/logo_sekolah.jpg">
+        <img class="logo-sekolah" src="img/ts25.png">
+    </div>
+    
+  <h1>Kelab ICT SKSA </h1>
+  <h2>Tarikh</h2>
+  <h2>Hari: Rabu</h2>
+  <h2>Kehadiran Murid</h2>
+  <div class="student-list">
+    <!-- Student List -->
+    <div class="student">
+        <span>AJMAL YUSUF BIN MOHD DANIAL (4UM)</span>
+        <div class="attendance-options">
+          
+            <input type="radio" name="attendance_1" id="present_1" value="Present">
+            <label for="present_1">Hadir</label>
+            <input type="radio" name="attendance_1" id="absent_1" value="Absent">
+            <label for="absent_1">Tidak Hadir</label>
+        </div>
+      </div>
+      <div class="student">
+        <span>AMMIR YUSUF BIN MOHD RIDHAN SYAUKANI (4UM)</span>
+        <div class="attendance-options">
+          
+            <input type="radio" name="attendance_2" id="present_2" value="Present">
+            <label for="present_2">Hadir</label>
+            <input type="radio" name="attendance_2" id="absent_2" value="Absent">
+            <label for="absent_2">Tidak Hadir</label>
+        </div>
+      </div>
+      <!-- Add more students here -->
+  </div>
+
+  <button class="submit-btn" onclick="submitAttendance()">Submit Attendance</button>
+</body>
+
+</html>
